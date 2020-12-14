@@ -1,0 +1,27 @@
+*<style>
+
+			body{
+				font-size:23px;
+				background:white;
+			}
+			
+			h2,h3{
+				color:silver;
+				font-family:apple ligothic, sans-serif; 
+			}
+
+			a{
+				color:#F4A460;
+				font-family:apple ligothic, sans-serif;
+			}
+
+			strong{
+				font-size:35px;
+				color:#F4A460;
+			}
+
+			.wholePage{
+				margin:auto;
+			}
+
+		</style>
