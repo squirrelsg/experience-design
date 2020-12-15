@@ -5,13 +5,14 @@
 		<title>The Last Train Trip Before Everything Changed</title>
 
 		<link rel="stylesheet" href="style.css">
+        <script src="java.js"></script>
 	</head>
 
 	
 
     <body>
     	
-    	<section>
+    	<section id="title">
     		<h1>The Last Train Trip Before Everything Changed</h1>
             <div class="textTitle"></div>
     	</section>
@@ -21,6 +22,12 @@
 			<a href="https://lithub.com/the-last-train-trip-before-everything-changed/" class="btn">Original Text</a>
 		</div>
 		
+		<div class="frzbtn">
+			<img src="snowflake-white.png" class="snowflake">
+		</div>
+		<button id="startbtn">Start</button>
+        <button id="stopbtn">Freeze</button>
+
 		<div class="subtitle">
 			<h3>Lauren Markham on Solitude, Snow, and Finding Reasons to Write</h3>
 
@@ -28,7 +35,7 @@
 		</div>
         
         <div class="marquee">
-        	<ul class="marquee-chapter-one">
+        	<ul class="marquee-chapter-one" id="one">
         		<li>
         			<p>
         				<strong>T</strong>oward the end of last year I found myself craving both snow and a slowing down of time.
@@ -71,7 +78,7 @@
         		</li>
         	</ul>
 
-        	<ul class="marquee-chapter-two">
+        	<ul class="marquee-chapter-two" id="two">
         		<li>
         			<p>
         				<strong>I</strong>t all came true. In Colorado it snowed so hard we could barely see the road we drove upon. The earth fell quiet and we tramped through powdery forests, hearing only our own breaths. On the second day the sun came out and the world around us glinted and gleamed. Tuesday morning we kissed goodbye and I headed for the station.
@@ -123,7 +130,7 @@
         			</p>
         		</li>
         	</ul>
-        	<ul class="marquee-chapter-three">
+        	<ul class="marquee-chapter-three" id="three">
         		<li>
         			<p>
         				<strong>F</strong>or the past several years I traveled to Europe each summer to organize a writing residency. Flights between Frankfurt and San Francisco skirt the arctic and pass over Greenland, a vast, mountainous territory of snow and ice. I'd learned to sit on the right side of the plane for the chance to stare out the window at Greenland for about forty-five minutes and weep. All that breathtaking ice down there like a precious artifact, and me hurtling above it spewing noxious gas. Each time I felt a longing to be down with the ice and an anticipatory grief for its disappearance-all while understanding I was complicit.
@@ -150,7 +157,7 @@
         			</p>
         		</li>
         	</ul>
-        	<ul class="marquee-chapter-four">
+        	<ul class="marquee-chapter-four" id="four">
         		<li>
         			<p>
         				<strong>"R</strong>emember that our families, friends and neighbors are scared, idle, out of work, and feel impotent," wrote Dr. Craig R. Smith, the Chair of the Department of Surgery at Columbia Medical School in a recent and rather stunning letter to his colleagues. "Anyone working in health care still enjoys the rapture of action. It's a privilege! We mush on."
@@ -167,7 +174,7 @@
         			</p>
         		</li>
         	</ul>
-        	<ul class="marquee-chapter-five">
+        	<ul class="marquee-chapter-five" id="five">
         		<li>
         			<p>
         				<strong>A</strong>side from cigarettes and snow, one of the things that helped me through the immense loneliness of adolescent winters was the discovery of Rainer Maria Rilke. I often took one of his books with me when I boarded the train from school to visit my family.  His poems were useful to me in that they simultaneously offered an enchantment with existence and the frank bleakness of things, making me feel as though I no longer had to choose. "You are not surprised at the force of the storm- / you have seen it growing," reads his poem "Onto a Vast Plain." "You thought / you could trust that power / when you plucked the fruit: / now it becomes a riddle again / and you again a stranger."
@@ -194,12 +201,12 @@
 		<div class="container">
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Chapter One</a></li>
-					<li><a href="#">Chapter Two</a></li>
-					<li><a href="#">Chapter Three</a></li>
-					<li><a href="#">Chapter Four</a></li>
-					<li><a href="#">Chapter Five</a></li>
+					<li><a href="#title">Home</a></li>
+					<li><a href="#one">Chapter One</a></li>
+					<li><a href="#two">Chapter Two</a></li>
+					<li><a href="#three">Chapter Three</a></li>
+					<li><a href="#four">Chapter Four</a></li>
+					<li><a href="#five">Chapter Five</a></li>
 				</ul>
 			</nav>
 		</div>
