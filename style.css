@@ -1,13 +1,13 @@
 body
 {
-	width:100%;
+	width:100;
+	overflow-x:hidden;
 	height:100vh;
 	color:black;
 	font-family:Apple LiGothic, sans-serif; 
 	background:linear-gradient(-45deg,#F4D689,#A5DEE4,#DAC9A6,#7DB9DE);
 	position:relative;
-	background-size:400% 1000%;
-	overflow:auto;
+	background-size:600% 1000%;
 	animation: change 25s ease-in-out infinite;
 }
 
@@ -107,6 +107,28 @@ nav a:hover{
 	box-shadow:0 0 1px rgba(0,0,0,0.25);
 	border-bottom:none;
 }
+
+.snowflake{
+	margin:0;
+	padding:0;
+	left:46.5%;
+	top:18%;
+	position:fixed;
+	width:100px;
+	height:100px;
+	animation:drop 5s linear forwards;
+}
+
+@keyframes drop{
+	0%{
+		position:0;
+	}
+	100%{
+		
+		transform:translateY(60vh);
+		
+	}
+}
 .subtitle
 {
 	color:white;
@@ -115,7 +137,7 @@ nav a:hover{
 	top:20vh;
 }
 
-.marquee-chapter-one, .marquee-chapter-two, .marquee-chapter-three, .marquee-chapter-four, .marquee-chapter-five{
+.marquee-chapter-one, .marquee-chapter-two, .marquee-chapter-three, .marquee-chapter-four, .marquee-chapter-five {
 	top:20vh;
 	position:relative;
 	font-size:20px;
@@ -125,14 +147,15 @@ nav a:hover{
 	color:white;
 	height:100vh;
 	display:flex;
-	justify-content:center;
 	align-items:center;
-	animation:scrolling 120s linear infinite;
+	animation:scrolling 150s linear infinite;
 }
-@keyframes scrolling{
-    0%{transform:translateX(80vw);}
-    100%{transform:translateX(-180vw);}
+@keyframes scrolling {
+    from {transform:translateX(0);}
+    to {transform:translateX(-180vw);}
 }
+
+
 .marquee li{
 	list-style:none;
 	width:35vw;
@@ -140,4 +163,42 @@ nav a:hover{
 	margin:80px;
 }
 
+.marquee-chapter-one{
+	animation:scrolling 150s linear infinite;
+	animation-delay:10s;
+}
 
+#startbtn{
+	display:inline-block;
+	text-decoration:none;
+	background-color:white;
+	color:black;
+	padding:0;
+	width:120px;
+	height:40px;
+	left:45%;
+	top:20vh;
+	line-height:43px;
+	border-radius:20px;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	align-items:center;
+}
+#stopbtn{
+	display:inline-block;
+	text-decoration:none;
+	background-color:white;
+	color:black;
+	padding:0;
+	width:120px;
+	height:40px;
+	left:45%;
+	top:20vh;
+	line-height:43px;
+	border-radius:20px;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	align-items:center;
+}
