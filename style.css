@@ -112,11 +112,19 @@ nav a:hover{
 	margin:0;
 	padding:0;
 	left:46.5%;
-	top:18%;
+  	top:18%;
+  	z-index: 1000;
 	position:fixed;
 	width:100px;
 	height:100px;
 	animation:drop 5s linear forwards;
+}
+
+.snowflake:hover{
+	width:95px;
+	height:95px;
+	align-items:center;
+	filter:blur(1.5px);
 }
 
 @keyframes drop{
@@ -124,7 +132,7 @@ nav a:hover{
 		position:0;
 	}
 	100%{
-		
+		display: block;
 		transform:translateY(60vh);
 		
 	}
@@ -146,21 +154,69 @@ nav a:hover{
 	box-sizing:border-box;
 	color:white;
 	height:100vh;
+	left:50%;
 	display:flex;
 	align-items:center;
-	/*animation:scrolling 150s linear infinite;*/
 }
-@keyframes scrolling {
-    from {transform:translateX(0);}
-    to {transform:translateX(-200vw);}
+.marquee-chapter-one{
+	animation:scrollingone 160s linear infinite;
+	animation-delay:10s;
+}
+.marquee-chapter-two{
+	animation:scrollingtwo 205s linear infinite;
+	animation-delay:180s;
+}
+.marquee-chapter-three{
+	animation:scrollingthree 105s linear infinite;
+	animation-delay:395s;
+}
+.marquee-chapter-four{
+	animation:scrollingfour 67s linear infinite;
+	animation-delay:510s;
+}
+.marquee-chapter-five{
+	animation:scrollingfive 86s linear infinite;
+	animation-delay:587s;
 }
 
+
+.marquee-stop .marquee-chapter-one, 
+.marquee-stop .marquee-chapter-two, 
+.marquee-stop .marquee-chapter-three, 
+.marquee-stop .marquee-chapter-four, 
+.marquee-stop .marquee-chapter-five {
+	animation-play-state: paused
+}
+@keyframes scrollingone {
+    from {transform:translateX(0);}
+    to {transform:translateX(-410vw);}
+}
+
+@keyframes scrollingtwo {
+    from {transform:translateX(0);}
+    to {transform:translateX(-510vw);}
+}
+
+@keyframes scrollingthree {
+    from {transform:translateX(0);}
+    to {transform:translateX(-260vw);}
+}
+
+@keyframes scrollingfour {
+    from {transform:translateX(0);}
+    to {transform:translateX(-160vw);}
+}
+
+@keyframes scrollingfive {
+    from {transform:translateX(0);}
+    to {transform:translateX(-210vw);}
+}
 
 .marquee li{
 	list-style:none;
 	width:35vw;
 	flex-shrink:0;
-	margin:80px;
+	margin:5vw;
 }
 
 .marquee{
@@ -173,8 +229,8 @@ nav a:hover{
 	animation-delay:10s;
 }*/
 
-#startbtn{
-	display:inline-block;
+/*#startbtn{
+	display: inline-block;
 	text-decoration:none;
 	background-color:white;
 	color:black;
@@ -206,6 +262,4 @@ nav a:hover{
 	vertical-align:middle;
 	position:fixed;
 	align-items:center;
-	/*animation-play-state:scrolling paused;*/
-}
-
+	/*animation-play-state:scrolling paused;*/}
