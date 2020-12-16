@@ -39,7 +39,6 @@ var $mrq = $('.marquee').marquee({
 	duplicated: true
 });
 
-
 $("#stopbtn").click(function(){
 	$mrq.marquee('toggle');
 });
